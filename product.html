@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="history.html">History</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h1 id="our">Our Products</h1>
+    <div id="info">
+
+        <div class="img">
+            <img src="1.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b> women flat shoes</h4>
+                <p><b>Price:</b> ₱ 500/-</p>
+                <button onclick="addToCart('women flat shoes', 500)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="2.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b> White Sports Shoes</h4>
+                <p><b>Price:</b> ₱ 700/-</p>
+                <button onclick="addToCart('White Sports Shoes', 700)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="3.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b> Black Formal Lace Shoes</h4>
+                <p><b>Price:</b> ₱ 600/-</p>
+                <button onclick="addToCart('Black Formal Lace Shoes', 600)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="4.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b> Sneakers</h4>
+                <p><b>Price:</b>₱ 650/-</p>
+                <button onclick="addToCart('Sneakers', 650)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="5.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b> Football Shoes</h4>
+                <p><b>Price:</b>₱ ₱ 750/-</p>
+                <button onclick="addToCart('Football Shoes', 750)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="6.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b> Brown Formal Shoes </h4>
+                <p><b>Price:</b> ₱ 600/-</p>
+                <button onclick="addToCart('Brown Formal Shoes', 600)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="7.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b> Black Sports Shoes</h4>
+                <p><b>Price:</b> ₱ 750/-</p>
+                <button onclick="addToCart('Black Sports Shoes', 750)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="8.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b> strap boots high top Shoes</h4>
+                <p><b>Price:</b> ₱ 750/-</p>
+                <button onclick="addToCart('strap boots high top Shoes', 750)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="9.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b>Brown Formal Lace Shoes</h4>
+                <p><b>Price:</b> ₱ 600/-</p>
+                <button onclick="addToCart('Brown Formal Lace Shoes',600)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="10.jpg">
+            <div class="img-desc">
+                <h4><b>Name:</b>Yellow Sneakers</h4>
+                <p><b>Price:</b> ₱ 800/-</p>
+                <button onclick="addToCart('Yellow Sneakers', 800)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="11.png">
+            <div class="img-desc">
+                <h4><b>Name:</b> Brown Formal Shoes</h4>
+                <p><b>Price:</b> ₱ 800/-</p>
+                <button onclick="addToCart('Brown Formal Shoes', 800)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="12.png">
+            <div class="img-desc">
+                <h4><b>Name:</b> Black Formal Shoes</h4>
+                <p><b>Price:</b> ₱ 600/-</p>
+                <button onclick="addToCart('Black Formal Shoes',600)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(productName, price) {
+            localStorage.setItem('productName', productName);
+            localStorage.setItem('price', price);
+            window.location.href = 'transaction.html';
+        }
+        </script>
+        
+
+</body>
+
+</html>
